@@ -8,12 +8,6 @@ public class Additional extends Line {
   private final Line fDialogue;
   private final Line fFeeling;
 
-  public Additional(final Line dialogue) {
-    super(Content.ADDITIONAL);
-    fDialogue = dialogue;
-    fFeeling = new Feeling("");
-  }
-
   public Additional(final Line dialogue, final Line feeling) {
     super(Content.ADDITIONAL);
     fDialogue = dialogue;
@@ -21,8 +15,7 @@ public class Additional extends Line {
   }
 
   @Override
-  public void print() {
-    fDialogue.print();
-    fFeeling.print();
+  public String generateText() {
+    return fDialogue.generateText() + fFeeling.generateText();
   }
 }

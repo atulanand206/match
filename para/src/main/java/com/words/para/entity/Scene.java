@@ -1,9 +1,6 @@
 package com.words.para.entity;
 
-import com.words.para.entity.content.Additional;
 import com.words.para.entity.content.Character;
-import com.words.para.entity.content.Dialogue;
-import com.words.para.entity.content.Feeling;
 import com.words.para.entity.content.Header;
 import com.words.para.entity.content.Information;
 import com.words.para.entity.content.Space;
@@ -11,7 +8,6 @@ import com.words.para.entity.content.Speech;
 import java.util.ArrayList;
 import java.util.List;
 import static com.words.para.entity.content.Character.dialogueContinuedString;
-import static com.words.para.entity.content.Dialogue.additionalSplitString;
 
 public class Scene {
 
@@ -36,35 +32,12 @@ public class Scene {
     addDialogue(character, dialogue, "");
   }
 
-  public void addDialogue(final String characterName, final String dialogue, final String feeling) {
-    addLine(new Speech(getCharacter(characterName), new Dialogue(dialogue), new Feeling(feeling)));
-    addSpace();
-  }
-
   public void addDialogue(
       final String characterName,
-      final String dialogues,
+      final String dialogue,
       final String feelingString,
       final String... additionalStrings) {
-    addLine(new Speech(getCharacter(characterName), new Feeling(feelingString),
-        getAdditionals(dialogues, additionalStrings)));
-    addSpace();
-  }
-
-  private List<Additional> getAdditionals(
-      final String dialogues,
-      final String[] additionalStrings) {
-    List<Additional> additionals = new ArrayList<>();
-    String[] split = dialogues.split(additionalSplitString());
-    for (int i = 0, splitLength = split.length; i < splitLength; i++) {
-      String dialogue = split[i];
-      String feeling = "";
-      if (additionalStrings.length > i) {
-        feeling = additionalStrings[i];
-      }
-      additionals.add(new Additional(new Dialogue(dialogue), new Feeling(feeling)));
-    }
-    return additionals;
+    addLine(new Speech(getCharacter(characterName), dialogue, feelingString, additionalStrings));
   }
 
   private Character getCharacter(final String characterName) {
@@ -78,18 +51,19 @@ public class Scene {
     return character;
   }
 
-  public void addLine(Line line) {
-    fLines.add(line);
-  }
-
-  public void addSpace() {
+  private void addSpace() {
     addLine(new Space());
   }
 
-  public void printLines() {
-    for (Line line : fLines) {
-      line.print();
-    }
+  private void addLine(final Line line) {
+    fLines.add(line);
+  }
+
+  public String generate() {
+    StringBuilder stringBuilder = new StringBuilder();
+    for (Line line : fLines)
+      stringBuilder.append(line.generateText());
+    return stringBuilder.toString();
   }
 
 }

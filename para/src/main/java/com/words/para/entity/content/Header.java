@@ -22,7 +22,7 @@ public class Header extends Line {
   }
 
   @Override
-  public void print() {
+  public String generateText() {
     StringBuilder text = new StringBuilder(fNumber + spaces(padding() - 1));
     text.append(fSceneType.getValue());
     text.append(" ");
@@ -32,7 +32,8 @@ public class Header extends Line {
     int length = text.length();
     text.append(" ".repeat(Math.max(0, 80 - length - padding())));
     text.append(fNumber);
-    System.out.println(text);
+    text.append("\n");
+    return text.toString();
   }
 
 }

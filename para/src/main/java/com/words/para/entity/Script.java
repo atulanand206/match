@@ -9,8 +9,10 @@ public class Script {
 
   public Script() { }
 
-  public void printLines() {
-    fScenes.forEach(Scene::printLines);
+  public String generate() {
+    StringBuilder stringBuilder = new StringBuilder();
+    fScenes.forEach(scene -> stringBuilder.append(scene.generate()));
+    return stringBuilder.toString();
   }
 
   public List<Scene> getScenes() {

@@ -25,11 +25,15 @@ public class Line {
     return text;
   }
 
-  public void print() {
+  public String generateText() {
     String wrap = WordUtils.wrap(getText(), getPadding().getLength());
     wrap = wrap.replace("\n", "\n" + initialSpace());
     wrap = initialSpace() + wrap;
-    System.out.println(wrap);
+    return wrap + (true ? "\n" : "");
+  }
+
+  public boolean appendReturn() {
+    return true;
   }
 
   public String initialSpace() {

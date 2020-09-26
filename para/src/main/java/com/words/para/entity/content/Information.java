@@ -8,4 +8,5 @@ public class Information extends Line {
   public Information(final String text) {
     super(Content.INFORMATION, text);
   }
+
 }

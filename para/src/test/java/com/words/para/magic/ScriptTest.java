@@ -18,7 +18,7 @@ public class ScriptTest {
     fScript.addScene(scene2());
     fScript.addScene(scene3());
     fScript.addScene(scene4());
-    fScript.printLines();
+    System.out.println(fScript.generate());
   }
 
   public Scene scene1() {
@@ -33,7 +33,7 @@ public class ScriptTest {
     scene.addDialogue("7TH JUROR",
         "This better be fast. I got tickets to a ball game tonight. Yankees -- Cleveland. We got this new kid pitching, Modjelewski, or whatever his ame is. He's a bull, this kid."
             + additionalSplitString() + "Shhooooom. A real jug handle."
-            + additionalSplitString() + "rYou're quite a ball fan, aren't you?"
+            + additionalSplitString() + "You're quite a ball fan, aren't you?"
             + additionalSplitString() + "Where do you want us to sit?",
         "to the 2nd Juror",
         "He shoots his hand forward and out to indicate the path of a curve ball",

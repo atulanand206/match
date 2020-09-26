@@ -10,9 +10,10 @@ public class Feeling extends Line {
   }
 
   @Override
-  public void print() {
+  public String generateText() {
     if (!getText().isEmpty()) {
-      super.print();
+      return super.generateText();
     }
+    return "";
   }
 }
