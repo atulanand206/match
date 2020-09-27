@@ -1,0 +1,103 @@
+{
+  "scenes": [
+    {
+      "number": 1,
+      "type": "I",
+      "name": "Introduction",
+      "time": "DARK",
+      "lines": [
+        {
+          "type": "Info",
+          "information": "A voice emanates from dark."
+        },
+        {
+          "type": "Speech",
+          "character": "VOICE",
+          "dialogue": "Ab bhi jiska khoon na khaula, khoon nahi woh paani hai, Jo desh k kaam na aae woh bekar jawaani hai."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "type": "I",
+      "name": "ASHFAQULLAH KHAN's Cell",
+      "time": "DAY",
+      "lines": [
+        {
+          "type": "Info",
+          "information": "CloseUp: A man putting kajal in his eyes, one eye at a time."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "type": "I",
+      "name": "RAM PRASAD BISMIL's Cell",
+      "time": "DAY",
+      "lines": [
+        {
+          "type": "Info",
+          "information": "A man, 30s sitting in lotus position, pouring water on his head using a copper vessel and chanting mantras."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "type": "I",
+      "name": "RAJGURU’S CELL; 23 MARCH 1931",
+      "time": "EVENING",
+      "lines": [
+        {
+          "type": "Info",
+          "information": "A man, 30s, with combed hair, standing, looking at the ventilation, turns towards the cell gate on hearing a sound in the corridor."
+        },
+        {
+          "type": "Info",
+          "information": "The camera moved towards the adjacent cell."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "type": "I",
+      "name": "SUKHDEV's Cell",
+      "time": "EVENING",
+      "lines": [
+        {
+          "type": "Info",
+          "information": "A man, 30s, sitting in the chair, turned when an english officer reached his cell gate and opened it."
+        },
+        {
+          "type": "Speech",
+          "character": "SUKHDEV",
+          "dialogue": "Zara rukiye Mr. McKinley. Ek krantikari ki dusre krantikari se mulaakat ho rahi hai.",
+          "feeling": "excited"
+        },
+        {
+          "type": "Info",
+          "information": "Sukhdev is reading a book by Lenin."
+        },
+        {
+          "type": "Speech",
+          "character": "SUKHDEV",
+          "dialogue": "Thank you. Chale?"
+        },
+        {
+          "type": "Speech",
+          "character": "McKinley",
+          "dialogue": "Kaash, sab kuch is tarah khatam nahi hota."
+        },
+        {
+          "type": "Info",
+          "information": "Sukhdev stands up from the chair and walks towards McKinley."
+        },
+        {
+          "type": "Speech",
+          "character": "SUKHDEV",
+          "dialogue": "Ye ant kaha hai Mr. McKinley. Ye toh shuruat hai.",
+          "feeling": "smiling"
+        }
+      ]
+    }
+  ]
+}
