@@ -1,0 +1,147 @@
+{
+  "scenes": [
+    {
+      "number": 1,
+      "type": "I",
+      "name": "JATIN's couch and Meghna's bedroom",
+      "time": "AFTERNOON",
+      "lines": [
+        {
+          "type": "Info",
+          "information": "Jatin, 25, procrastinator, lying on the couch, contemplating about existentialism."
+        },
+        {
+          "type": "Info",
+          "information": "The phone has been ringing since morning, 28 missed calls. It all started after he made a call to his elder sister in the morning asking if she is willing to go on a trip with him."
+        },
+        {
+          "type": "Info",
+          "information": "She had rejected the idea outright stating her busy schedule and family responsibilities. They both had planned quite a few trips during their childhood."
+        },
+        {
+          "type": "Info",
+          "information": "The morning conversation between the siblings."
+        },
+        {
+          "type": "Speech",
+          "character": "Meghna",
+          "dialogue": "What's gotten into you today? It's not even 9 o'clock.",
+          "feeling": "half-asleep, irritated by imagining her day so early"
+        },
+        {
+          "type": "Speech",
+          "character": "Jatin",
+          "dialogue": "Huh! Cranky sister.",
+          "feeling": "surprised"
+        },
+        {
+          "type": "Speech",
+          "character": "Meghna",
+          "dialogue": "Now, do I require your permission to get cranky as well?"
+        },
+        {
+          "type": "Speech",
+          "character": "Jatin",
+          "dialogue": "Listen! I'm going to France next month. You want to actually fulfill one of your childhood promises?"
+        },
+        {
+          "type": "Info",
+          "information": "Meghna clawing her husband's back as she tries to wake him up. They are smiling at the fact that she can never be easy with her brother."
+        },
+        {
+          "type": "Speech",
+          "character": "Meghna",
+          "dialogue": "Sorry brother. You'll have to go solo again. I can't leave Karan for a week. -----He might ditch me while I'm hooking up with random strangers in some foreign land.",
+          "additionals": [
+            "making playful moves and smirking at Karan"
+          ]
+        },
+        {
+          "type": "Speech",
+          "character": "Jatin",
+          "dialogue": "You're so cruel. I'm taking Vaishali with me. You can bring Karan as well. We can all have an orgy in the most romantic country of all."
+        },
+        {
+          "type": "Info",
+          "information": "Meghna is shocked at such a statement from the innocent Jatin who would not do anything even if a girl is standing naked in his room."
+        },
+        {
+          "type": "Info",
+          "information": "Jatin is waiting for the answer of which he surely expects a rejection and has already booked only 2 tickets. Vaishali got included in the plan last night only and who doesn't like to take advantage of couple bookings."
+        },
+        {
+          "type": "Info",
+          "information": "Indians are suckers for saving all the pennies they can."
+        },
+        {
+          "type": "Speech",
+          "character": "Meghna",
+          "dialogue": "It sounds awkward. I have work to do. Have fun. Take pictures."
+        },
+        {
+          "type": "Info",
+          "information": "Meghna disconnected the call. Jatin is wondering whether it made sense to even ask her. He knew she wasn't going to agree."
+        },
+        {
+          "type": "Info",
+          "information": "Jatin called Vaishali and updated her with the plan. She sounded excited that it's a couples trip and she could check off another couple goals from the list."
+        },
+        {
+          "type": "Info",
+          "information": "Jatin was sad that he wanted his sister to come along and he abruptly disconnected the call and threw his phone on the floor and has gone into an overthinking mode."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "type": "I",
+      "name": "JATIN'S OFFICE",
+      "time": "EVENING",
+      "lines": [
+        {
+          "type": "Info",
+          "information": "Jatin usually goes to the office in the afternoon and works till midnight."
+        },
+        {
+          "type": "Info",
+          "information": "Jatin is working on finishing up a piece which has to be shipped by the EOD."
+        },
+        {
+          "type": "Info",
+          "information": "Jatin is a bit of loner when it comes to deadlines and randomly exclaims after an hour or two without actually making sense."
+        },
+        {
+          "type": "Info",
+          "information": "Around 8PM"
+        },
+        {
+          "type": "Speech",
+          "character": "Jatin",
+          "dialogue": "Pain? A stupid thing. -----Emotions? Keep exploiting."
+        },
+        {
+          "type": "Info",
+          "information": "Around 11PM"
+        },
+        {
+          "type": "Speech",
+          "character": "Jatin",
+          "dialogue": "Just in time to catch her."
+        },
+        {
+          "type": "Info",
+          "information": "Vaishali was about to pick him and they had plans to visit this new club in town and party the hell out of it."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "type": "E",
+      "name": "Elevator in jatin's office",
+      "time": "MIDNIGHT",
+      "lines": [
+
+      ]
+    }
+  ]
+}

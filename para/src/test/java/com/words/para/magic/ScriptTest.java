@@ -4,6 +4,8 @@ import com.words.para.ScriptTestUtils;
 import com.words.para.TestApplicationConfiguration;
 import com.words.para.entity.Script;
 import com.words.para.scripts.BareillyKiBarfi;
+import java.io.File;
+import java.io.FileWriter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +46,24 @@ public class ScriptTest {
 
   @Test
   void testRangDeBasanti() throws Exception {
-    String contentAsString = createScript(fMockMvc,"rang_de_basanti.json");
+    String contentAsString = createScript(fMockMvc, "rang_de_basanti.json");
     System.out.println(contentAsString);
+  }
+
+  @Test
+  void testVenture() throws Exception {
+    String contentAsString = createScript(fMockMvc, "venture.json");
+    System.out.println(contentAsString);
+    writeToFile(contentAsString, "venture");
+  }
+
+  void writeToFile(final String content, final String fileName) throws Exception {
+    File file = new File("./" + fileName + ".txt");
+    if (!file.exists()) {
+      file.createNewFile();
+    }
+    FileWriter fw = new FileWriter(file.getName());
+    fw.write(content);
+    fw.close();
   }
 }

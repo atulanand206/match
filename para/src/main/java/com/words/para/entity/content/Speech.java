@@ -39,7 +39,7 @@ public class Speech extends Line {
 
   @Override
   public String generateText() {
-    StringBuilder stringBuilder = new StringBuilder(fCharacter.generateText());
+    StringBuilder stringBuilder = new StringBuilder(fCharacter.generateText().toUpperCase());
     stringBuilder.append(fFeeling.generateText());
     for (Additional fAdditional : fAdditionals) {
       stringBuilder.append(fAdditional.generateText());

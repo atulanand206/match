@@ -10,6 +10,6 @@ public class Character extends Line {
   }
 
   public static String dialogueContinuedString() {
-    return " (CONT’D)";
+    return " (CONTINUED)";
   }
 }

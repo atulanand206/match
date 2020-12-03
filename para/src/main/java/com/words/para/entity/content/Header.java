@@ -26,7 +26,7 @@ public class Header extends Line {
     StringBuilder text = new StringBuilder(fNumber + spaces(padding() - 1));
     text.append(fSceneType.getValue());
     text.append(" ");
-    text.append(getText());
+    text.append(getText().toUpperCase());
     text.append(" - ");
     text.append(fTime);
     int length = text.length();
